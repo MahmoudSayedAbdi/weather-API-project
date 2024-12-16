@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Login</title>
+<link rel="stylesheet" href="css/all.min.css" />
+<link rel="stylesheet" href="css/media.css" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+    <header>
+        <!-- nav bar -->
+        <nav class="navbar navbar-expand-lg">
+        <div class="container my-4">
+            <a
+            class="navbar-brand d-flex justify-content-center align-items-center"
+            href="#"
+            >
+            <img src="imgs/logo@2x.png" class="w-100 h-100" alt="" />
+            <div class="text-white m-3">
+                <h1>Weather</h1>
+                <p>tagline goes here</p>
+            </div>
+            </a>
+
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <i class="fa-solid fa-bars text-white fs-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a
+                    class="nav-link active text-white"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                >
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Live cameres</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+        <!-- body -->
+        <section>
+        <div class="container">
+            <!-- search  -->
+            <div class="search">
+            <div class="input-group mb-3">
+                <input
+                id="searchInput"
+                type="text"
+                class="form-control"
+                placeholder="city"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+                />
+                <button class="btn btn-danger" id="basic-addon1">Find</button>
+            </div>
+            </div>
+            <!-- dashbourd -->
+            <div class="weather row row-cols-lg-3 row-cols-1">
+
+                <!-- now -->
+                <div class="col">
+                    <div class="now">
+                        <div class="head">
+                            <p id="dayNow">Sunday</p>
+                            <p id="monthNow">15 December</p>
+                        </div>
+                        <div class="body p-4">
+                            <p id="city">cairo</p>
+                            <h5 class="text-white" id="degree">
+                            19.1 <span class="align-text-top fs-1">o</span>C
+                            </h5>
+                            <img id="iconNow" src="imgs/113.png" alt="" />
+                            <p id="customNow">clear</p>
+                            <div class="d-flex justify-content-between">
+                            <div>
+                                <img src="imgs/icon-umberella@2x.png" alt="" />
+                                <p class="  ">20%</p>
+                            </div>
+                            <div>
+                                <img src="imgs/icon-compass@2x.png" alt="" />
+                                <p class="  ">18km/h</p>
+                            </div>
+                            <div>
+                                <img src="imgs/icon-wind@2x.png" alt="" />
+                                <p class=" ">east</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- next -->
+                <div class="col next_1">
+                    <div class="next  ms-3 col">
+                    <div class="head">
+                        <p id="dayNext">Tuesday</p>
+                    </div>
+                    <div class="body p-4">
+                        <img id="iconNext" src="imgs/icon-umberella@2x.png" alt="" />
+                        <h5 class="dergeeMax text-white fs-3" id="dergeeMax">
+                            19.1 <span class="align-text-top fs-6">o</span>C
+                        </h5>
+                        <h5 class="dergeeMin fs-6" id="dergeeMin">
+                            10.1 <span class="align-text-top fs-6">o</span>C
+                        </h5>
+
+                        <p id="custom">Heavy rain</p>
+                    </div>
+                    </div>
+                </div>      
+                <!-- next next  -->
+                <div class="col next_2">
+                    <div class="next  ms-3 col">
+                    <div class="head">
+                        <p id="dayNext">Tuesday</p>
+                    </div>
+                    <div class="body p-4">
+                        <img id="iconNext" src="imgs/icon-umberella@2x.png" alt="" />
+                        <h5 class="dergeeMax text-white fs-3" id="dergeeMax">
+                            19.1 <span class="align-text-top fs-6">o</span>C
+                        </h5>
+                        <h5 class="dergeeMin fs-6" id="dergeeMin">
+                            10.1 <span class="align-text-top fs-6">o</span>C
+                        </h5>
+
+                        <p id="custom">Heavy rain</p>
+                    </div>
+                    </div>
+                </div>      
+                
+
+            </div>
+        </div>
+        </section>
+    </header>
+
+    <footer>
+        <div class="container  h-100">
+            <div class="row ">
+                <div class="col-lg-8 col-12">
+                    <div class="input-group mb-3 mt-5">
+                        <input
+                        id="EmailInput"
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter your email to subscribe..."
+                        aria-label="Username"
+                        aria-describedby="basic-addon1"
+                        />
+                        <button class="btn  btn-danger " id="basic-addon1">Subscribe</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-12">
+                    <div class="social-links mb-3 mt-5">
+                        <a class="p-2 fs-4" href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a class="p-2 fs-4" href="#"><i class="fa-brands  fa-twitter"></i></a>
+                        <a class="p-2 fs-4" href="#"><i class="fa-brands  fa-google-plus"></i></a>
+                        <a class="p-2 fs-4" href="#"><i class="fa-brands  fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <p class="colophon text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
